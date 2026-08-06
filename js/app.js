@@ -38,6 +38,11 @@ function setActiveTab(btn) {
   btn.classList.add('active');
 }
 
+function scrollCats(direction) {
+  const nav = document.getElementById('catNav');
+  nav.scrollBy({ left: direction * 150, behavior: 'smooth' });
+}
+
 // ── MENÚ ─────────────────────────────────────────────────────
 function renderMenu(catId) {
   const container = document.getElementById('menuSections');
